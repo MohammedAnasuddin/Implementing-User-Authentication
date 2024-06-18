@@ -1,0 +1,72 @@
+/* src/HomePage.css */
+body,
+html,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Further reduced gap between elements */
+    padding: 20px;
+    font-size: 4rem; /* Increase the base font size */
+}
+
+h1 {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20rem; /* Huge font size for the heading */
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Further reduced gap between buttons */
+    flex-wrap: wrap;
+    margin-top: 5px; /* Further reduced space above the buttons */
+}
+
+button {
+    padding: 15px 30px; /* Slightly reduced padding */
+    font-size: 2.5em; /* Slightly reduced font size for buttons */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    min-width: 150px; /* Adjusted minimum width */
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+    transform: scale(1.05);
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
